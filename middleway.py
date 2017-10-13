@@ -2,5 +2,6 @@
 # array length 2 containing their middle elements.
 def middle_way(a, b):
     aa = a[1:-1]
+    bb = b[1:-1]
     
-    return print("{}".format(aa))
+    return aa + bb
