@@ -94,3 +94,15 @@ gameIsDone = False
 
 white True:
     displayBoard(hangmanascii, missedLetters, correctLetters, secretWord)
+    # user enters a letter
+    guess = getGuess(missedLetters + correctLetters)
+    if guess in secretWord:
+        correctLetters = correctLetters + guess
+        #checks if got it right
+        foundAllLetters = True
+        for i in range(len(secretWord)):
+            if secretWord[i] not in correctLetters:
+                foundAllLetters = False
+            if foundAllLetters:
+                print('Congratulations you have won! the word is ' + secretWord)
+                
