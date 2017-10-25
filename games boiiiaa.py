@@ -59,11 +59,12 @@ def result(player, computer):
                     computer_score += 1
 def play_again():
     answer = input("Would you like to paly again? y/n: ")
-    if answer in ("y", "Y", "Yes", "yea", "Yea", "yeah", "Yeah"):
+    if answer in ("y", "Y", "Yes", "yes", "yea", "Yea", "yeah", "Yeah"):
             return answer
     else:
             print("Thanks for playing!")
         
-                        
+def scores():
+    print("Hello {} {} is your score, {} is the computers score".format(user,player_score,computer_score))
     
     
