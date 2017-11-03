@@ -83,7 +83,7 @@ HANGMAN = (
 -----------
 """)
 
-HANGMANSS = HANGMAN[0]
+HANGMANSS = HANGMAN[0]eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 words = ["hangman","word","kittens"]
 chosenWord = random.choice(words)
 playing = True
@@ -91,15 +91,16 @@ def select():
     guessedLetter = guessed.get()
     
     
-    guessed_letters = ['a','b','c','d','e','f','g','h','i','j','k','l,''m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    guessed_letters = []
     word_guessed = []
-    guessed_letters.remove(
+    for letter in guessedLetter(range(n))
+        guessed_letters.append(letter)
     
     print(guessed_letters)    
     if guessedLetter in chosenWord:
             
-            print("Correct")
-    else:
+            print("Correct")ee
+    else:e
             
             print("incorrect")
     Label(mainframe, text=guessedLetter)
@@ -121,13 +122,10 @@ mainframe.configure(bg='gray')
 guessed = StringVar()
 #Labels 
 Label(mainframe, text='ASCII ( HANG MAN )',bg='blue').grid(column=1, row =1, sticky = E)
-Ascii = Label(mainframe, text=HANGMAN[6],bg='blue').grid(column=1, row =2, sticky = W)
+Ascii = Label(mainframe, text=HANGMAN[0],bg='blue').grid(column=1, row =2, sticky = W)
 #Hangman ascii ^
 #select button
-
 Button(mainframe, text="Select", command = select).grid(column = 1, row = 3, sticky = W)
-# if you got it
-# your guesses
 
 
 #All of the letters 
