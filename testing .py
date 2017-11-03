@@ -83,7 +83,6 @@ HANGMAN = (
 -----------
 """)
 
-HANGMANSS = HANGMAN[0]eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 words = ["hangman","word","kittens"]
 chosenWord = random.choice(words)
 playing = True
@@ -93,17 +92,14 @@ def select():
     
     guessed_letters = []
     word_guessed = []
-    for letter in guessedLetter(range(n))
-        guessed_letters.append(letter)
     
     print(guessed_letters)    
-    if guessedLetter in chosenWord:
-            
-            print("Correct")ee
-    else:e
+    if guessedLetter in chosenWord:                
+            Label(mainframe, text="You're correct!", bg="grey").grid(column=1, row=4)
+    else:
             
             print("incorrect")
-    Label(mainframe, text=guessedLetter)
+    Label(mainframe, text="You're incorrect!", bg="grey").grid(column=1, row=4)
     return
 
 
@@ -113,7 +109,7 @@ def select():
 root = Tk()
 root.title ('Hangman in TKinter')
 
-mainframe = Frame(root, padx = '100')
+mainframe = Frame(root, padx = '100',pady= '100')
 mainframe.grid(column=0, row = 0, sticky=(N,W,E,S))
 mainframe.columnconfigure(0, weight=1)
 mainframe.rowconfigure(0,weight=1)
